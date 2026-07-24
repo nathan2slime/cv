@@ -1,7 +1,7 @@
 export const CERTIFICATIONS = [
   {
-    pt: "Certificado de Participação - XVI Semana Nacional de Ciência e Tecnologia do IFMA Campus Caxias",
-    en: "Participation Certificate - XVI National Science and Technology Week at IFMA Campus Caxias",
+    pt: "XVI Semana Nacional de Ciência e Tecnologia no IFMA Campus Caxias",
+    en: "XVI National Science and Technology Week at IFMA Campus Caxias",
   },
   {
     pt: "Congresso Norte-Nordeste de Empreendedorismo e Inovação em Saúde - CONEIS",

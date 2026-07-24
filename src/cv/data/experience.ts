@@ -8,19 +8,22 @@ export const COMPANIES = [
       position({
         title: { pt: "Engenheiro de Software II", en: "Software Engineer II" },
         start: date(2026, 4, 1),
-        location: { pt: "São Paulo, São Paulo", en: "São Paulo, São Paulo, Brazil" },
         remote: true,
         description: {
           pt: `
-            - Atuando na evolução dos produtos digitais da tribo de Logística em diferentes times.
-            - Apoio decisões de arquitetura, refinamentos técnicos e revisão de código para manter consistência entre os produtos da área.
+            - Implementei um micro-frontend para gerenciamento de inventário de depósitos em produtos digitais de logística.
+            - Adaptei front-ends de sistemas logísticos para CNPJ alfanumérico, apoiando continuidade operacional e conformidade cadastral.
+            - Desenvolvi telas para gerenciamento de aprovação e revisão de pré-venda usadas por times de cadeia de suprimentos.
+            - Contribuí em micro-frontends agnósticos para notificações operacionais e fluxos de aprovação.
           `,
           en: `
-            - Working on the evolution of digital products for the Logistics team across different departments.
-            - Took on greater technical responsibility for digital logistics products, focusing on Virtual Inventory, Cross-docking, and Safety Stock flows.
+            - Implemented a micro-frontend for warehouse inventory management in digital logistics products.
+            - Adapted logistics front-ends for alphanumeric CNPJ, supporting operational continuity and registration compliance.
+            - Built screens for presale approval and review management used by supply chain teams.
+            - Contributed to agnostic micro-frontends for operational notifications and approval flows.
           `,
         },
-        keywords: ["React", "TypeScript", "Ant Design", "Module Federation", "Micro front-ends", "GitFlow", "Unit testing"],
+        keywords: ["React", "TypeScript", "Ant Design", "Module Federation", "Micro front-ends", "Git", "Confluence", "Jira", "Unit testing"],
       }),
       position({
         title: { pt: "Desenvolvedor Front-end", en: "Front-end Developer" },
@@ -30,17 +33,19 @@ export const COMPANIES = [
         remote: true,
         description: {
           pt: `
-            - Desenvolvi telas e fluxos com React, TypeScript e Ant Design para produtos digitais da tribo de Logística.
-            - Modernizei interfaces de Estoque Virtual, Cross-docking e Margem de Segurança, apoiando a evolução operacional da área.
-            - Mantive documentação técnica, cobertura com testes unitários e fluxo de desenvolvimento seguindo GitFlow.
+            - Modernizei produtos digitais de logística com React, TypeScript e Ant Design, incluindo fluxos de estoque virtual e margem de segurança.
+            - Revisei pull requests, apoiei decisões técnicas e participei das rotinas do time de front-end.
+            - Criei documentação técnica e testes unitários para sustentar evolução e manutenção dos produtos.
+            - Realizei spike para um portal logístico com arquitetura de micro-frontends baseada em Module Federation.
           `,
           en: `
-            - Built screens and user flows with React, TypeScript, and Ant Design for digital logistics products.
-            - Modernized Virtual Inventory, Cross-docking, and Safety Stock interfaces, supporting the area's operational evolution.
-            - Maintained technical documentation, unit test coverage, and a GitFlow-based development workflow.
+            - Modernized digital logistics products with React, TypeScript, and Ant Design, including virtual stock and safety margin flows.
+            - Reviewed pull requests, supported technical decisions, and participated in front-end team routines.
+            - Created technical documentation and unit tests to sustain product evolution and maintenance.
+            - Ran a spike for a logistics portal using a micro-frontend architecture based on Module Federation.
           `,
         },
-        keywords: ["React", "TypeScript", "Ant Design", "Module Federation", "Micro front-ends", "GitFlow"],
+        keywords: ["React", "TypeScript", "Ant Design", "Vite", "Module Federation", "Micro front-ends", "GitFlow", "Confluence", "Jira"],
       }),
     ],
   }),
@@ -58,15 +63,15 @@ export const COMPANIES = [
           pt: `
             - Prestei consultoria em desenvolvimento front-end, contribuindo para a implementação e evolução de soluções para o cliente.
             - Desenvolvi interfaces com React e TypeScript, aplicando TDD quando adequado ao fluxo de entrega.
-            - Participei de reuniões técnicas, refinamentos e revisões de código seguindo padrões de GitFlow.
+            - Participei de dailies, refinamentos, SDRs, reuniões técnicas e revisões de código seguindo padrões de GitFlow.
           `,
           en: `
             - Provided front-end development consulting, contributing to the implementation and evolution of client solutions.
             - Built interfaces with React and TypeScript, applying TDD when appropriate for the delivery flow.
-            - Joined technical meetings, refinements, and code reviews following GitFlow standards.
+            - Joined dailies, refinements, SDRs, technical meetings, and code reviews following GitFlow standards.
           `,
         },
-        keywords: ["React", "TypeScript", "TDD", "GitFlow"],
+        keywords: ["React", "TypeScript", "TDD", "GitFlow", "Pull requests"],
       }),
     ],
   }),
@@ -86,15 +91,17 @@ export const COMPANIES = [
             - Implementei i18n para suporte a múltiplos idiomas e melhoria da experiência em diferentes mercados.
             - Desenvolvi dashboards e telas de métricas para acompanhamento de atendimentos, indicadores e performance operacional.
             - Integrei interfaces com serviços em PHP, mantendo fluxo de versionamento com Git Flow e revisão de código.
+            - Participei de dailies, plannings e reviews para alinhamento contínuo das entregas.
           `,
           en: `
             - Evolved the new version of an omnichannel customer service platform with Next.js, React, and Node.js.
             - Implemented i18n to support multiple languages and improve the experience across different markets.
             - Built dashboards and metrics screens to track conversations, indicators, and operational performance.
             - Integrated interfaces with PHP services while keeping Git Flow versioning and code review practices.
+            - Joined dailies, plannings, and reviews to keep deliveries continuously aligned.
           `,
         },
-        keywords: ["Next.js", "React", "Node.js", "i18n", "PHP", "Git Flow"],
+        keywords: ["Next.js", "React", "Node.js", "i18n", "PHP", "Git Flow", "Dashboards"],
       }),
     ],
   }),
@@ -124,7 +131,7 @@ export const COMPANIES = [
             - Maintained a Git Trunk workflow with code reviews and daily GitHub usage.
           `,
         },
-        keywords: ["Next.js", "React", "Tailwind CSS", "Turborepo", "Node.js", "REST", "Git Trunk"],
+        keywords: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Turborepo", "Node.js", "REST", "GitHub", "Git Trunk", "UI libraries"],
       }),
     ],
   }),
@@ -152,7 +159,7 @@ export const COMPANIES = [
             - Supported CI/CD pipelines and environments on Azure, GitHub, and AWS.
           `,
         },
-        keywords: ["Next.js", "React", "GraphQL", "REST", "Three.js", "NestJS", "Node.js", "TypeScript", "PostgreSQL", "Azure", "AWS"],
+        keywords: ["Next.js", "React", "GraphQL", "REST", "Three.js", "NestJS", "Node.js", "TypeScript", "PostgreSQL", "Design System", "CI/CD", "Azure", "AWS", "GitHub"],
       }),
     ],
   }),
@@ -184,7 +191,7 @@ export const COMPANIES = [
     ],
   }),
   company({
-    name: "MyPharma",
+    name: "Grupo Santa Cruz",
     oneLiner: { pt: "E-commerce e soluções para farmácias", en: "E-commerce and solutions for pharmacies" },
     positions: [
       position({
@@ -206,7 +213,7 @@ export const COMPANIES = [
             - Implemented unit and integration tests, technical documentation, and system support routines.
           `,
         },
-        keywords: ["React", "Next.js", "Node.js", "RabbitMQ", "Redis", "MongoDB", "REST", "GitHub Actions"],
+        keywords: ["React", "Next.js", "Node.js", "RabbitMQ", "Redis", "MongoDB", "REST", "GitFlow", "GitHub Actions", "TDD", "Unit testing", "Integration testing"],
       }),
     ],
   }),
@@ -232,7 +239,7 @@ export const COMPANIES = [
             - Implemented unit tests, integration tests, components, and Storybook documentation.
           `,
         },
-        keywords: ["Flutter", "Dart", "GraphQL", "Git Flow", "Storybook"],
+        keywords: ["Flutter", "Dart", "GraphQL", "GitFlow", "Unit testing", "Integration testing", "Storybook"],
       }),
       position({
         title: { pt: "Desenvolvedor Front-end", en: "Front-end Developer" },
@@ -252,7 +259,7 @@ export const COMPANIES = [
             - Implemented unit tests, integration tests, reusable components, and Storybook documentation.
           `,
         },
-        keywords: ["React", "Angular", "Stencil.js", "Redux", "Valtio", "Sass", "GraphQL", "REST", "Storybook"],
+        keywords: ["React", "Angular", "Stencil.js", "Redux", "Valtio", "Sass", "GraphQL", "REST", "GitFlow", "Unit testing", "Integration testing", "Storybook"],
       }),
     ],
   }),
@@ -280,7 +287,7 @@ export const COMPANIES = [
             - Adopted Git Flow, code reviews, unit tests, and integration tests.
           `,
         },
-        keywords: ["Node.js", "Python", "Flask", "Django", "MySQL", "AWS Lambda", "React", "React Native", "Bitbucket", "GitHub"],
+        keywords: ["Node.js", "Python", "Flask", "Django", "MySQL", "AWS Lambda", "React", "React Native", "GitFlow", "Bitbucket", "GitHub", "Unit testing", "Integration testing"],
       }),
     ],
   }),

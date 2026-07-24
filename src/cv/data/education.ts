@@ -11,7 +11,7 @@ export const EDUCATION = [
   education({
     institution: "UniFacema",
     degree: { pt: "Curso Superior de Tecnologia (CST)", en: "Associate Degree" },
-    field: { pt: "Tecnologia da Informação", en: "Information Technology" },
+    field: { pt: "Tecnologia da Informação, Láurea Acadêmica", en: "Information Technology, Academic Laureate" },
     start: date(2023, 7, 1),
     end: date(2025, 12, 1),
   }),
