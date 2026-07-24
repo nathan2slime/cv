@@ -4,7 +4,7 @@ export const PERSONAL = personal({
   name: "Francisco Cajlon Jhonathan Moura Batista",
   title: { pt: "Engenheiro de Software", en: "Software Engineer" },
   location: { pt: "Caxias, Maranhão", en: "Caxias, Maranhão, Brazil" },
-  email: "nathan3boss@gmail.com",
+  email: "nathan.cajlon@gmail.com",
   github: "https://github.com/nathan2slime",
   linkedin: "https://www.linkedin.com/in/jhonathan-moura/",
   summary: {
