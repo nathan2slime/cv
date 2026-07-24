@@ -4,7 +4,6 @@ export const COMPANIES = [
   company({
     name: "Grupo Casas Bahia",
     oneLiner: { pt: "Varejo e e-commerce", en: "Retail and e-commerce" },
-    url: "https://ri.grupocasasbahia.com.br/",
     positions: [
       position({
         title: { pt: "Engenheiro de Software II", en: "Software Engineer II" },
@@ -53,7 +52,6 @@ export const COMPANIES = [
   company({
     name: "AllEasy",
     oneLiner: { pt: "Consultoria de desenvolvimento de software", en: "Software development consulting" },
-    url: "https://alleasy.com.br/",
     positions: [
       position({
         title: { pt: "Desenvolvedor Front-end", en: "Front-end Developer" },
@@ -80,7 +78,6 @@ export const COMPANIES = [
   company({
     name: "Maxbot",
     oneLiner: { pt: "Plataforma omnichannel de atendimento ao cliente", en: "Omnichannel customer service platform" },
-    url: "https://www.maxbot.com.br/",
     positions: [
       position({
         title: { pt: "Desenvolvedor Front-end", en: "Front-end Developer" },
@@ -111,7 +108,6 @@ export const COMPANIES = [
   company({
     name: "Hypn Tech",
     oneLiner: { pt: "Sistema de pagamentos B2B para recompensas corporativas", en: "B2B payments system for corporate rewards" },
-    url: "https://www.linkedin.com/company/hypn-tech/",
     positions: [
       position({
         title: { pt: "Desenvolvedor Front-end", en: "Front-end Developer" },
@@ -142,7 +138,6 @@ export const COMPANIES = [
   company({
     name: "Madpine Studios",
     oneLiner: { pt: "Estúdio de jogos e produtos digitais", en: "Game studio and digital products" },
-    url: "https://madpinestudios.com/",
     positions: [
       position({
         title: { pt: "Engenheiro de Software", en: "Software Engineer" },
@@ -171,7 +166,6 @@ export const COMPANIES = [
   company({
     name: "FireGecko Studio",
     oneLiner: { pt: "Estúdio de jogos e experiências web", en: "Game studio and web experiences" },
-    url: "https://www.linkedin.com/company/firegecko-studio/",
     positions: [
       position({
         title: { pt: "Desenvolvedor Front-end", en: "Front-end Developer" },
@@ -199,7 +193,6 @@ export const COMPANIES = [
   company({
     name: "Grupo Santa Cruz",
     oneLiner: { pt: "E-commerce e soluções para farmácias", en: "E-commerce and solutions for pharmacies" },
-    url: "https://www.gruposantacruz.com.br/",
     positions: [
       position({
         title: { pt: "Desenvolvedor Full-stack", en: "Full-stack Developer" },
@@ -227,7 +220,6 @@ export const COMPANIES = [
   company({
     name: "Puzzl Software House",
     oneLiner: "Software house",
-    url: "https://puzzl.com.br/",
     positions: [
       position({
         title: { pt: "Desenvolvedor Flutter", en: "Flutter Developer" },
@@ -274,7 +266,6 @@ export const COMPANIES = [
   company({
     name: "Verzel Soluções em Sistemas",
     oneLiner: "Software house",
-    url: "https://verzel.com.br/",
     positions: [
       position({
         title: { pt: "Desenvolvedor Full-stack", en: "Full-stack Developer" },
@@ -303,7 +294,6 @@ export const COMPANIES = [
   company({
     name: "Klutch Tecnologia",
     oneLiner: "Software house",
-    url: "https://www.linkedin.com/company/klutch-tecnologia/",
     positions: [
       position({
         title: { pt: "Estagiário Front-end", en: "Front-end Intern" },
