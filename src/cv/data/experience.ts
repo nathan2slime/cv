@@ -8,6 +8,7 @@ export const COMPANIES = [
       position({
         title: { pt: "Engenheiro de Software II", en: "Software Engineer II" },
         start: date(2026, 4, 1),
+        end: date(2026, 8, 14),
         remote: true,
         description: {
           pt: `
