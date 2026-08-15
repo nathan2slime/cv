@@ -12,16 +12,24 @@ export const COMPANIES = [
         remote: true,
         description: {
           pt: `
-            - Implementei um micro-frontend para gerenciamento de inventário de depósitos em produtos digitais de logística.
-            - Adaptei front-ends de sistemas logísticos para CNPJ alfanumérico, apoiando continuidade operacional e conformidade cadastral.
-            - Desenvolvi telas para gerenciamento de aprovação e revisão de pré-venda usadas por times de cadeia de suprimentos.
-            - Contribuí em micro-frontends agnósticos para notificações operacionais e fluxos de aprovação.
+            - Implementei um micro-frontend para gerenciamento de peças de mostruário para lojas do grupo.
+            - Implementei telas para o gerenciamento de solicitações de pré-venda para o time de Oferta Estoque.
+            - Apoio na adaptação de frontends para arquitetura em micro-frontends.
+            - Implementei um micro-frontend para gerenciamento de inventário de depósito no time de Gerenciamento de Estoque.
+            - Apoiei a adaptação de frontends nos times de Oferta Estoque e Gerenciamento de Estoque para a implementação do CNPJ alfanumérico.
+            - Apoiei o time de Oferta Estoque na criação de telas para gerenciamento do processo de aprovação e revisão de pré-venda usado pela SCM.
+            - Apoiei a criação de um micro-frontend agnóstico para gerenciamento de notificações de operações.
+            - Apoiei a criação de um micro-frontend agnóstico para gerenciamento de fluxos de aprovação.
           `,
           en: `
-            - Implemented a micro-frontend for warehouse inventory management in digital logistics products.
-            - Adapted logistics front-ends for alphanumeric CNPJ, supporting operational continuity and registration compliance.
-            - Built screens for presale approval and review management used by supply chain teams.
-            - Contributed to agnostic micro-frontends for operational notifications and approval flows.
+            - Implemented a micro-frontend to manage showroom/display units for the group's stores.
+            - Implemented screens to manage pre-sale requests for the Inventory Offer team.
+            - Supported frontend adaptation to a micro-frontend architecture.
+            - Implemented a micro-frontend for warehouse inventory management on the Inventory Management team.
+            - Supported frontend adaptations across the Inventory Offer and Inventory Management teams for the alphanumeric CNPJ implementation.
+            - Supported the Inventory Offer team in creating screens to manage the pre-sale approval and review process used by SCM.
+            - Supported the creation of a domain-agnostic micro-frontend for operations notification management.
+            - Supported the creation of a domain-agnostic micro-frontend for approval flow management.
           `,
         },
         keywords: ["React", "TypeScript", "Ant Design", "Module Federation", "Micro front-ends", "Git", "Confluence", "Jira", "Unit testing"],
@@ -37,13 +45,13 @@ export const COMPANIES = [
             - Modernizei produtos digitais de logística com React, TypeScript e Ant Design, incluindo fluxos de estoque virtual e margem de segurança.
             - Revisei pull requests, apoiei decisões técnicas e participei das rotinas do time de front-end.
             - Criei documentação técnica e testes unitários para sustentar evolução e manutenção dos produtos.
-            - Realizei spike para um portal logístico com arquitetura de micro-frontends baseada em Module Federation.
+            - Realizei spike para o portal de logística com arquitetura de micro-frontends baseada em Module Federation.
           `,
           en: `
             - Modernized digital logistics products with React, TypeScript, and Ant Design, including virtual stock and safety margin flows.
             - Reviewed pull requests, supported technical decisions, and participated in front-end team routines.
             - Created technical documentation and unit tests to sustain product evolution and maintenance.
-            - Ran a spike for a logistics portal using a micro-frontend architecture based on Module Federation.
+            - Ran a spike for the logistics portal using a micro-frontend architecture based on Module Federation.
           `,
         },
         keywords: ["React", "TypeScript", "Ant Design", "Vite", "Module Federation", "Micro front-ends", "GitFlow", "Confluence", "Jira"],

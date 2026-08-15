@@ -189,6 +189,9 @@ function ossBadge(project: OpenSourceProject): string {
 }
 
 function renderEducation(item: Education, locale: Locale): string {
-  const degree = item.field ? `${localize(item.degree, locale)} -- ${localize(item.field, locale)}` : localize(item.degree, locale);
-  return `\\cveducation{${texEscape(item.institution)}}{${texEscape(degree)}}{${fmtYearRange(item.start, item.end, locale)}}`;
+  const degreeParts = [localize(item.degree, locale)];
+  if (item.field) degreeParts.push(localize(item.field, locale));
+  const degree = degreeParts.join(" -- ");
+  const grade = item.grade ? localize(item.grade, locale) : "";
+  return `\\cveducation{${texEscape(item.institution)}}{${texEscape(degree)}}{${fmtYearRange(item.start, item.end, locale)}}{${texEscape(grade)}}`;
 }

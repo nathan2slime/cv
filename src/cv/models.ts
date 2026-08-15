@@ -39,6 +39,7 @@ export interface Education {
   readonly institution: string;
   readonly degree: LocalizedText;
   readonly field?: LocalizedText;
+  readonly grade?: LocalizedText;
   readonly start?: Date;
   readonly end?: Date;
 }
@@ -108,6 +109,7 @@ interface EducationInput {
   readonly institution: string;
   readonly degree: LocalizedText;
   readonly field?: LocalizedText;
+  readonly grade?: LocalizedText;
   readonly start?: Date;
   readonly end?: Date;
 }

@@ -106,10 +106,12 @@
 % Vertical separator between successive companies inside Experience.
 \newcommand{\cvcompanybreak}{\vspace{3.2ex}}
 
-% Education entry. #1 = institution, #2 = degree+field, #3 = year range
-\newcommand{\cveducation}[3]{%
+% Education entry. #1 = institution, #2 = degree+field, #3 = year range, #4 = optional grade
+\newcommand{\cveducation}[4]{%
   \noindent\textbf{#1}\hfill{\small #3}\par
-  \noindent\textit{#2}\par\smallskip
+  \noindent\textit{#2}\par
+  \ifx&#4&\else\noindent{\footnotesize\textbf{#4}}\par\fi
+  \smallskip
 }
 
 % Open-source project header.
