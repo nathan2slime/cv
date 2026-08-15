@@ -7,11 +7,15 @@ export const COMPANIES = [
     positions: [
       position({
         title: { pt: "Engenheiro de Software II", en: "Software Engineer II" },
-        start: date(2026, 4, 1),
+        start: date(2025, 8, 1),
         end: date(2026, 8, 14),
         remote: true,
         description: {
           pt: `
+            - Modernizei produtos digitais de logística com React, TypeScript e Ant Design, incluindo fluxos de estoque virtual e margem de segurança.
+            - Revisei pull requests, apoiei decisões técnicas e participei das rotinas do time de front-end.
+            - Criei documentação técnica e testes unitários para sustentar evolução e manutenção dos produtos.
+            - Realizei spike para o portal de logística com arquitetura de micro-frontends baseada em Module Federation.
             - Implementei um micro-frontend para gerenciamento de peças de mostruário para lojas do grupo.
             - Implementei telas para o gerenciamento de solicitações de pré-venda para o time de Oferta Estoque.
             - Apoio na adaptação de frontends para arquitetura em micro-frontends.
@@ -22,6 +26,10 @@ export const COMPANIES = [
             - Apoiei a criação de um micro-frontend agnóstico para gerenciamento de fluxos de aprovação.
           `,
           en: `
+            - Modernized digital logistics products with React, TypeScript, and Ant Design, including virtual stock and safety margin flows.
+            - Reviewed pull requests, supported technical decisions, and participated in front-end team routines.
+            - Created technical documentation and unit tests to sustain product evolution and maintenance.
+            - Ran a spike for the logistics portal using a micro-frontend architecture based on Module Federation.
             - Implemented a micro-frontend to manage showroom/display units for the group's stores.
             - Implemented screens to manage pre-sale requests for the Inventory Offer team.
             - Supported frontend adaptation to a micro-frontend architecture.
@@ -32,29 +40,7 @@ export const COMPANIES = [
             - Supported the creation of a domain-agnostic micro-frontend for approval flow management.
           `,
         },
-        keywords: ["React", "TypeScript", "Ant Design", "Module Federation", "Micro front-ends", "Git", "Confluence", "Jira", "Unit testing"],
-      }),
-      position({
-        title: { pt: "Desenvolvedor Front-end", en: "Front-end Developer" },
-        start: date(2025, 8, 1),
-        end: date(2026, 3, 1),
-        location: { pt: "São Paulo, São Paulo", en: "São Paulo, São Paulo, Brazil" },
-        remote: true,
-        description: {
-          pt: `
-            - Modernizei produtos digitais de logística com React, TypeScript e Ant Design, incluindo fluxos de estoque virtual e margem de segurança.
-            - Revisei pull requests, apoiei decisões técnicas e participei das rotinas do time de front-end.
-            - Criei documentação técnica e testes unitários para sustentar evolução e manutenção dos produtos.
-            - Realizei spike para o portal de logística com arquitetura de micro-frontends baseada em Module Federation.
-          `,
-          en: `
-            - Modernized digital logistics products with React, TypeScript, and Ant Design, including virtual stock and safety margin flows.
-            - Reviewed pull requests, supported technical decisions, and participated in front-end team routines.
-            - Created technical documentation and unit tests to sustain product evolution and maintenance.
-            - Ran a spike for the logistics portal using a micro-frontend architecture based on Module Federation.
-          `,
-        },
-        keywords: ["React", "TypeScript", "Ant Design", "Vite", "Module Federation", "Micro front-ends", "GitFlow", "Confluence", "Jira"],
+        keywords: ["React", "TypeScript", "Ant Design", "Vite", "Azure", "Module Federation", "Micro front-ends", "Git", "Confluence", "Jira", "Unit testing"],
       }),
     ],
   }),

@@ -192,6 +192,15 @@ function renderEducation(item: Education, locale: Locale): string {
   const degreeParts = [localize(item.degree, locale)];
   if (item.field) degreeParts.push(localize(item.field, locale));
   const degree = degreeParts.join(" -- ");
-  const grade = item.grade ? localize(item.grade, locale) : "";
-  return `\\cveducation{${texEscape(item.institution)}}{${texEscape(degree)}}{${fmtYearRange(item.start, item.end, locale)}}{${texEscape(grade)}}`;
+  const grade = item.grade ? renderGrade(localize(item.grade, locale)) : "";
+  return `\\cveducation{${texEscape(item.institution)}}{${texEscape(degree)}}{${fmtYearRange(item.start, item.end, locale)}}{${grade}}`;
+}
+
+function renderGrade(value: string): string {
+  const labelEnd = value.indexOf(":");
+  if (labelEnd === -1) return texEscape(value);
+
+  const label = value.slice(0, labelEnd + 1);
+  const grade = value.slice(labelEnd + 1);
+  return `\\textbf{${texEscape(label)}}${texEscape(grade)}`;
 }
