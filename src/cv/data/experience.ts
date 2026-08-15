@@ -9,6 +9,7 @@ export const COMPANIES = [
         title: { pt: "Engenheiro de Software II", en: "Software Engineer II" },
         start: date(2025, 8, 1),
         end: date(2026, 8, 14),
+        location: { pt: "São Paulo, São Paulo", en: "São Paulo, São Paulo, Brazil" },
         remote: true,
         description: {
           pt: `
