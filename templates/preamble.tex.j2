@@ -5,7 +5,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 % newtx = modern Times-like with full T1 coverage (Times New Roman feel).
-\usepackage{newtxtext}
+% nofontspec keeps Tectonic from requiring Latin Modern OpenType files that
+% are not always present in GitHub Actions' bundle/cache.
+\usepackage[nofontspec]{newtxtext}
 \renewcommand{\familydefault}{\rmdefault}
 \usepackage{amssymb}  % \bigstar
 % Map a few Unicode glyphs that show up in source data to TeX commands,
