@@ -29,23 +29,7 @@ export const OPEN_SOURCE_PROJECTS = [
       `,
     },
     keywords: ["React", "TypeScript", "Rslib", "Panda CSS", "npm"],
-    order: 4,
-  }),
-  openSourceProject({
-    name: "Space Krypton",
-    repo: "nathan2slime/space-krypton",
-    tagline: { pt: "Rastreamento orbital em 2D e 3D", en: "2D and 3D orbital tracking" },
-    description: {
-      pt: `
-        Construiu uma plataforma de rastreamento de satélites que combina dados em tempo real com visualizações orbitais em **2D** e **3D**. Organiza contatos espaciais em uma experiência web focada em exploração, leitura visual e acompanhamento de trajetórias.
-      `,
-      en: `
-        Built a satellite tracking platform that combines real-time data with **2D** and **3D** orbital visualizations. Organizes space contacts into a web experience focused on exploration, visual readability, and trajectory monitoring.
-      `,
-    },
-    keywords: ["Satellites", "Real-time Data", "2D Visualization", "3D Visualization", "Orbital Tracking"],
-    metrics: false,
-    order: 6,
+    order: 3,
   }),
   openSourceProject({
     name: "aurelia",
@@ -60,23 +44,7 @@ export const OPEN_SOURCE_PROJECTS = [
       `,
     },
     keywords: ["React", "Three.js", "VRM", "GLSL", "Reduced Motion"],
-    order: 11,
-  }),
-  openSourceProject({
-    name: "mikanote",
-    repo: "nathan2slime/mikanote",
-    tagline: { pt: "Notas, tarefas e calendário em monorepo", en: "Notes, tasks, and calendar monorepo" },
-    description: {
-      pt: `
-        Construiu um monorepo com app web **Next.js**, API **Rust**, persistência em **PostgreSQL** e autenticação. Entrega notas, tarefas, planejamento em calendário e um palco de personagem **MMD** com **Three.js**.
-      `,
-      en: `
-        Built a monorepo with a **Next.js** web app, **Rust** API, **PostgreSQL** persistence, and authentication. Delivers notes, tasks, calendar planning, and a **Three.js** **MMD** character stage.
-      `,
-    },
-    keywords: ["Next.js", "Rust", "PostgreSQL", "Authentication", "Three.js", "MMD"],
-    metrics: false,
-    order: 3,
+    order: 9,
   }),
   openSourceProject({
     name: "apl-dashi",
@@ -91,7 +59,7 @@ export const OPEN_SOURCE_PROJECTS = [
       `,
     },
     keywords: ["NestJS", "Prisma", "PostgreSQL", "Redis", "MinIO", "Swagger", "Observability"],
-    order: 5,
+    order: 4,
   }),
   openSourceProject({
     name: "tetris",
@@ -106,7 +74,7 @@ export const OPEN_SOURCE_PROJECTS = [
       `,
     },
     keywords: ["Rust", "Ratatui", "Crossterm", "Terminal UI", "Linux Releases"],
-    order: 10,
+    order: 8,
   }),
   openSourceProject({
     name: "Seris",
@@ -121,7 +89,7 @@ export const OPEN_SOURCE_PROJECTS = [
       `,
     },
     keywords: ["Rust", "Serenity", "Discord", "SQLite", "Docker"],
-    order: 7,
+    order: 5,
   }),
   openSourceProject({
     name: "reona",
@@ -136,7 +104,7 @@ export const OPEN_SOURCE_PROJECTS = [
       `,
     },
     keywords: ["Rust", "Ratatui", "Crossterm", "N2YO", "Satellites"],
-    order: 9,
+    order: 7,
   }),
   openSourceProject({
     name: "@nathan3boss/exval",
@@ -151,7 +119,7 @@ export const OPEN_SOURCE_PROJECTS = [
       `,
     },
     keywords: ["Express", "TypeScript", "Validation", "Zod", "Yup", "class-transformer", "npm"],
-    order: 8,
+    order: 6,
   }),
   openSourceProject({
     name: "melisearch-cdc",
