@@ -56,6 +56,7 @@ export interface OpenSourceProject {
   readonly description: MarkdownText;
   readonly keywords: readonly string[];
   readonly order: number;
+  readonly metrics?: boolean;
   readonly language?: string;
   readonly stars?: number;
   readonly lastCommit?: Date;
@@ -121,6 +122,7 @@ interface OpenSourceProjectInput {
   readonly description: MarkdownText;
   readonly keywords?: readonly string[];
   readonly order?: number;
+  readonly metrics?: boolean;
   readonly language?: string;
   readonly stars?: number;
   readonly lastCommit?: Date;
@@ -212,6 +214,7 @@ export function openSourceProject(input: OpenSourceProjectInput): OpenSourceProj
     description: mapLocalized(input.description, dedentStrip),
     keywords: Object.freeze([...(input.keywords ?? [])]),
     order: input.order ?? 100,
+    ...(input.metrics !== undefined ? { metrics: input.metrics } : {}),
     ...(input.language ? { language: input.language } : {}),
     ...(input.stars !== undefined ? { stars: input.stars } : {}),
     ...(input.lastCommit ? { lastCommit: input.lastCommit } : {}),

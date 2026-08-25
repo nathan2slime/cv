@@ -92,12 +92,16 @@ export function enrichProjects(
   options: { readonly forceRefresh?: boolean } = {},
 ): readonly OpenSourceProject[] {
   if (projects.length === 0) return projects;
+  const projectsWithMetrics = projects.filter((project) => project.metrics !== false);
+  if (projectsWithMetrics.length === 0) return projects;
+
   const cache = loadOrRefresh(
-    projects.map((project) => project.repo),
+    projectsWithMetrics.map((project) => project.repo),
     options.forceRefresh ?? false,
   );
 
   return projects.map((project) => {
+    if (project.metrics === false) return project;
     const metric = cache.repos[project.repo];
     if (!metric) return project;
     const [year, month, day] = metric.last_commit.split("-").map(Number);

@@ -2,19 +2,141 @@ import { openSourceProject } from "../models.ts";
 
 export const OPEN_SOURCE_PROJECTS = [
   openSourceProject({
-    name: "@nathan3boss/ui",
-    repo: "nathan2slime/ui",
-    tagline: { pt: "Biblioteca de componentes React", en: "React component library" },
+    name: "Stock Sync",
+    repo: "nathan2slime/stock-sync",
+    tagline: { pt: "Sincronização offline de inventário", en: "Offline-capable inventory synchronization" },
     description: {
       pt: `
-        Sistema de componentes para **React** distribuído como pacote npm. Centraliza componentes tipados, estilos com **Panda CSS** e build de biblioteca com **Rslib**, com documentação pública para uso e referência de API.
+        Construiu um aplicativo de inventário compatível com uso offline, com interface **React 19**, API **NestJS** e persistência em **PostgreSQL**. Enfileira mutações em **IndexedDB** quando operações falham, permite retentar ou descartar mudanças locais e entrega ambiente com **Docker**, **CI** e manifests de deploy em **k3s**.
       `,
       en: `
-        Component system for **React** distributed as an npm package. Centralizes typed components, **Panda CSS** styling, and library builds with **Rslib**, with public documentation for usage and API reference.
+        Built an offline-capable inventory app with a **React 19** interface, **NestJS** API, and **PostgreSQL** persistence. Queues failed product mutations in **IndexedDB**, lets users retry or discard local operations, and ships **Docker**, **CI**, and **k3s** deployment manifests.
+      `,
+    },
+    keywords: ["React 19", "NestJS", "PostgreSQL", "IndexedDB", "Docker", "CI", "k3s"],
+    order: 1,
+  }),
+  openSourceProject({
+    name: "@nathan3boss/ui",
+    repo: "nathan2slime/ui",
+    tagline: { pt: "Biblioteca React publicada no npm", en: "React UI library published to npm" },
+    description: {
+      pt: `
+        Construiu uma biblioteca de UI para **React** com **TypeScript**, **Rslib** e **Panda CSS**, publicada como pacote npm. Mantém componentes tipados, pipeline de build para biblioteca e site de documentação próprio para instalação, uso e referência.
+      `,
+      en: `
+        Built a **React** UI library with **TypeScript**, **Rslib**, and **Panda CSS**, published as an npm package. Maintains typed components, a library build pipeline, and a dedicated documentation site for installation, usage, and reference.
       `,
     },
     keywords: ["React", "TypeScript", "Rslib", "Panda CSS", "npm"],
-    order: 1,
+    order: 4,
+  }),
+  openSourceProject({
+    name: "Space Krypton",
+    repo: "nathan2slime/space-krypton",
+    tagline: { pt: "Rastreamento orbital em 2D e 3D", en: "2D and 3D orbital tracking" },
+    description: {
+      pt: `
+        Construiu uma plataforma de rastreamento de satélites que combina dados em tempo real com visualizações orbitais em **2D** e **3D**. Organiza contatos espaciais em uma experiência web focada em exploração, leitura visual e acompanhamento de trajetórias.
+      `,
+      en: `
+        Built a satellite tracking platform that combines real-time data with **2D** and **3D** orbital visualizations. Organizes space contacts into a web experience focused on exploration, visual readability, and trajectory monitoring.
+      `,
+    },
+    keywords: ["Satellites", "Real-time Data", "2D Visualization", "3D Visualization", "Orbital Tracking"],
+    metrics: false,
+    order: 6,
+  }),
+  openSourceProject({
+    name: "aurelia",
+    repo: "nathan2slime/aurelia",
+    tagline: { pt: "Experiência visual React e Three.js", en: "React and Three.js visual experience" },
+    description: {
+      pt: `
+        Construiu uma experiência visual com **React** e **Three.js** onde uma água-viva **VRM** flutua em um campo de estrelas **GLSL**. Implementa movimento orgânico seguindo o ponteiro, acompanhamento com os olhos e suporte a preferências de movimento reduzido.
+      `,
+      en: `
+        Built a **React** and **Three.js** visual experience where a **VRM** jellyfish floats through a **GLSL** star field. Implements organic pointer-following motion, eye tracking, and support for reduced-motion preferences.
+      `,
+    },
+    keywords: ["React", "Three.js", "VRM", "GLSL", "Reduced Motion"],
+    order: 11,
+  }),
+  openSourceProject({
+    name: "mikanote",
+    repo: "nathan2slime/mikanote",
+    tagline: { pt: "Notas, tarefas e calendário em monorepo", en: "Notes, tasks, and calendar monorepo" },
+    description: {
+      pt: `
+        Construiu um monorepo com app web **Next.js**, API **Rust**, persistência em **PostgreSQL** e autenticação. Entrega notas, tarefas, planejamento em calendário e um palco de personagem **MMD** com **Three.js**.
+      `,
+      en: `
+        Built a monorepo with a **Next.js** web app, **Rust** API, **PostgreSQL** persistence, and authentication. Delivers notes, tasks, calendar planning, and a **Three.js** **MMD** character stage.
+      `,
+    },
+    keywords: ["Next.js", "Rust", "PostgreSQL", "Authentication", "Three.js", "MMD"],
+    metrics: false,
+    order: 3,
+  }),
+  openSourceProject({
+    name: "apl-dashi",
+    repo: "nathan2slime/apl-dashi",
+    tagline: { pt: "API NestJS com infraestrutura completa", en: "NestJS API with complete infrastructure" },
+    description: {
+      pt: `
+        Construiu uma API backend com **NestJS**, **Prisma** e **PostgreSQL**, cobrindo autenticação por sessão, uploads de arquivos, paginação, health checks e documentação **Swagger**. Integra **Redis**, **MinIO**, observabilidade e ambiente local com **Docker**.
+      `,
+      en: `
+        Built a backend API with **NestJS**, **Prisma**, and **PostgreSQL**, covering session authentication, file uploads, pagination, health checks, and **Swagger** documentation. Integrates **Redis**, **MinIO**, observability, and a local **Docker** environment.
+      `,
+    },
+    keywords: ["NestJS", "Prisma", "PostgreSQL", "Redis", "MinIO", "Swagger", "Observability"],
+    order: 5,
+  }),
+  openSourceProject({
+    name: "tetris",
+    repo: "nathan2slime/tetris",
+    tagline: { pt: "Tetris terminal em Rust", en: "Terminal Tetris in Rust" },
+    description: {
+      pt: `
+        Construiu um Tetris de terminal em **Rust** com **Ratatui** e **Crossterm**, incluindo efeitos animados, temas selecionáveis, pontuação, níveis e preview de peça fantasma. Publica binários de release para **Linux**.
+      `,
+      en: `
+        Built a terminal Tetris game in **Rust** with **Ratatui** and **Crossterm**, including animated effects, selectable themes, scoring, levels, and ghost piece preview. Publishes release binaries for **Linux**.
+      `,
+    },
+    keywords: ["Rust", "Ratatui", "Crossterm", "Terminal UI", "Linux Releases"],
+    order: 10,
+  }),
+  openSourceProject({
+    name: "Seris",
+    repo: "nathan2slime/seris",
+    tagline: { pt: "Bot Discord em Rust", en: "Rust Discord bot" },
+    description: {
+      pt: `
+        Construiu um bot de **Discord** em **Rust** com **Serenity**, comandos slash e persistência em **SQLite**. Inclui integrações com APIs externas, helpers de benchmark, assets de release, instaladores e imagem **Docker** mínima.
+      `,
+      en: `
+        Built a **Discord** bot in **Rust** with **Serenity**, slash commands, and **SQLite** persistence. Includes external API integrations, benchmark helpers, release assets, installers, and a minimal **Docker** image.
+      `,
+    },
+    keywords: ["Rust", "Serenity", "Discord", "SQLite", "Docker"],
+    order: 7,
+  }),
+  openSourceProject({
+    name: "reona",
+    repo: "nathan2slime/reona",
+    tagline: { pt: "HUD terminal para contatos orbitais", en: "Terminal HUD for orbital contacts" },
+    description: {
+      pt: `
+        Construiu uma aplicação terminal em **Rust** com **Ratatui** e **Crossterm** para escanear contatos orbitais próximos via **N2YO**. Permite selecionar satélites e acompanhar sua posição em um globo rotativo.
+      `,
+      en: `
+        Built a **Rust** terminal app with **Ratatui** and **Crossterm** for scanning nearby orbital contacts through **N2YO**. Lets users select satellites and track their position on a rotating globe.
+      `,
+    },
+    keywords: ["Rust", "Ratatui", "Crossterm", "N2YO", "Satellites"],
+    order: 9,
   }),
   openSourceProject({
     name: "@nathan3boss/exval",
@@ -22,88 +144,28 @@ export const OPEN_SOURCE_PROJECTS = [
     tagline: { pt: "Builders de validação para Express", en: "Validation builders for Express" },
     description: {
       pt: `
-        Biblioteca **TypeScript** para validação HTTP em aplicações **Express**. Gera middlewares composáveis para **body**, **params** e **query** a partir de adapters, mantendo o núcleo independente de schemas como **Zod**, **Yup** e **class-transformer**.
+        Construiu uma biblioteca **TypeScript** para validação HTTP em aplicações **Express**. Gera middlewares composáveis para **body**, **params** e **query** com adapters para **Zod**, **Yup** e **class-transformer**.
       `,
       en: `
-        **TypeScript** library for HTTP validation in **Express** applications. Generates composable middleware for **body**, **params**, and **query** through adapters while keeping the core independent from schema tools such as **Zod**, **Yup**, and **class-transformer**.
+        Built a **TypeScript** library for HTTP validation in **Express** applications. Generates composable middleware for **body**, **params**, and **query** with adapters for **Zod**, **Yup**, and **class-transformer**.
       `,
     },
     keywords: ["Express", "TypeScript", "Validation", "Zod", "Yup", "class-transformer", "npm"],
+    order: 8,
+  }),
+  openSourceProject({
+    name: "melisearch-cdc",
+    repo: "nathan2slime/melisearch-cdc",
+    tagline: { pt: "CDC de PostgreSQL para Meilisearch", en: "PostgreSQL to Meilisearch CDC" },
+    description: {
+      pt: `
+        Construiu um monorepo **Rust** e **React** que mantém um índice **Meilisearch** sincronizado com **PostgreSQL** usando Change Data Capture. Usa **Debezium** para capturar mudanças via replicação lógica, publica eventos no **Kafka** e consome esses eventos com um indexador Rust.
+      `,
+      en: `
+        Built a **Rust** and **React** monorepo that keeps a **Meilisearch** index synchronized with **PostgreSQL** using Change Data Capture. Uses **Debezium** to capture changes through logical replication, publishes events to **Kafka**, and consumes them with a Rust indexer.
+      `,
+    },
+    keywords: ["Rust", "React", "PostgreSQL", "Meilisearch", "Debezium", "Kafka", "CDC"],
     order: 2,
-  }),
-  openSourceProject({
-    name: "apl-dashi",
-    repo: "nathan2slime/apl-dashi",
-    tagline: { pt: "API NestJS com infraestrutura local completa", en: "NestJS API with a complete local infrastructure" },
-    description: {
-      pt: `
-        API backend **NestJS** para autenticação, posts e upload de anexos. Modela usuários, preferências, posts encadeados e assets com **Prisma/PostgreSQL**, usa sessões em **Redis**, storage S3-compatible com **MinIO** e stack local com **Docker Compose**, **Loki**, **Fluent Bit** e **Grafana**.
-      `,
-      en: `
-        **NestJS** backend API for authentication, posts, and attachment uploads. Models users, preferences, threaded posts, and assets with **Prisma/PostgreSQL**, uses **Redis** sessions, S3-compatible storage with **MinIO**, and a local **Docker Compose**, **Loki**, **Fluent Bit**, and **Grafana** stack.
-      `,
-    },
-    keywords: ["NestJS", "Prisma", "PostgreSQL", "Redis", "MinIO", "Docker Compose", "Swagger"],
-    order: 3,
-  }),
-  openSourceProject({
-    name: "apl-atani",
-    repo: "nathan2slime/apl-atani",
-    tagline: { pt: "API NestJS para upload e entrega de assets", en: "NestJS API for asset upload and delivery" },
-    description: {
-      pt: `
-        Serviço **NestJS** para ingestão, persistência e entrega de assets. Encapsula upload para storage S3-compatible via **MinIO**, organiza a camada de dados com **Prisma** e mantém ambiente local reprodutível com **Docker**.
-      `,
-      en: `
-        **NestJS** service for asset ingestion, persistence, and delivery. Encapsulates uploads to S3-compatible storage through **MinIO**, organizes the data layer with **Prisma**, and keeps a reproducible local environment with **Docker**.
-      `,
-    },
-    keywords: ["NestJS", "TypeScript", "MinIO", "S3", "Prisma", "Docker"],
-    order: 4,
-  }),
-  openSourceProject({
-    name: "apl-katawa-rbac",
-    repo: "nathan2slime/apl-katawa-rbac",
-    tagline: { pt: "CRM com controle de acesso baseado em RBAC", en: "CRM with RBAC-based access control" },
-    description: {
-      pt: `
-        CRM **TypeScript** orientado a permissões e controle de acesso baseado em papéis. Estrutura o produto como monorepo com apps e packages, separando domínio, autorização e automação de desenvolvimento em um ambiente local com **Docker**.
-      `,
-      en: `
-        Permission-oriented **TypeScript** CRM with role-based access control. Structures the product as a monorepo with apps and packages, separating domain, authorization, and development automation in a local **Docker** environment.
-      `,
-    },
-    keywords: ["TypeScript", "CRM", "RBAC", "Turborepo", "Docker"],
-    order: 5,
-  }),
-  openSourceProject({
-    name: "earth",
-    repo: "nathan2slime/earth",
-    tagline: { pt: "Interface para imagens da Terra pelo DSCOVR", en: "Interface for DSCOVR Earth imagery" },
-    description: {
-      pt: `
-        Aplicação web **TypeScript** para explorar imagens naturais da Terra capturadas pela câmera **EPIC** no satélite **DSCOVR**. Consome dados públicos de captura diária e apresenta uma interface de visualização focada em imagens orbitais.
-      `,
-      en: `
-        **TypeScript** web application for exploring natural-color Earth imagery captured by the **EPIC** camera onboard **DSCOVR**. Consumes public daily capture data and presents a viewer focused on orbital imagery.
-      `,
-    },
-    keywords: ["TypeScript", "Next.js", "Node", "React"],
-    order: 6,
-  }),
-  openSourceProject({
-    name: "otemae",
-    repo: "nathan2slime/otemae",
-    tagline: { pt: "Busca de animes com integração à API Jikan", en: "Anime search with Jikan API integration" },
-    description: {
-      pt: `
-        Cliente web **React** para consulta de animes usando a **Jikan API**, camada pública não oficial do MyAnimeList. Implementa busca, exibição de sinopses e detalhes de títulos, com deploy de produção na **Vercel**.
-      `,
-      en: `
-        **React** web client for querying anime data through the **Jikan API**, the public unofficial MyAnimeList API layer. Implements search, synopsis display, and title details, with production deployment on **Vercel**.
-      `,
-    },
-    keywords: ["TypeScript", "Jikan API", "React", "Sass", "Vercel"],
-    order: 7,
   }),
 ] as const;
